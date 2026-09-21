@@ -1,0 +1,919 @@
+.home {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 40px 0px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 90px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  left: 12%;
+  top: 25%;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  margin: 0 0 25px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #171717;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.35);
+}
+
+.hero-button {
+  border: none;
+  border-radius: 12px;
+  padding: 15px 28px;
+  background: #fff4f2;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #eadbd5;
+}
+
+/* =========================
+   USŁUGI
+========================= */
+
+.services-section {
+  width: 1200px;
+  max-width: calc(100vw - 80px);
+  margin: 150px -145px 100px;
+}
+
+/* =========================
+   NAGŁÓWEK
+========================= */
+
+.services-header {
+  max-width: 430px;
+
+  margin-bottom: 70px;
+}
+
+.services-header > span {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #b8957d;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.services-header h2 {
+  margin: 0 0 28px;
+
+  color: #171717;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.services-header p {
+  margin: 0;
+
+  color: #77706b;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================
+   LISTA USŁUG
+========================= */
+
+.services-list {
+  width: 100%;
+}
+
+/* POJEDYNCZA USŁUGA */
+
+.service-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 70px 1fr 250px 45px;
+
+  align-items: center;
+
+  gap: 35px;
+
+  min-height: 190px;
+
+  padding: 28px 0;
+
+  border-top: 1px solid #ded4cc;
+}
+
+/* ostatnia linia */
+
+.service-item:last-child {
+  border-bottom: 1px solid #ded4cc;
+}
+
+/* =========================
+   NUMER
+========================= */
+
+.service-number {
+  align-self: flex-start;
+
+  padding-top: 8px;
+
+  color: #b8957d;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   INFORMACJE
+========================= */
+
+.service-info h3 {
+  margin: 0 0 13px;
+
+  color: #1c1a18;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.service-info p {
+  max-width: 470px;
+
+  margin: 0 0 12px;
+
+  color: #77706b;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.service-details {
+  color: #b8957d;
+
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* =========================
+   ZDJĘCIE
+========================= */
+
+.service-image {
+  width: 250px;
+  height: 140px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+.service-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+/* delikatny hover */
+
+.service-item:hover .service-image img {
+  transform: scale(1.04);
+}
+
+/* =========================
+   STRZAŁKA
+========================= */
+
+.service-arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  color: #a98771;
+  font-size: 24px;
+  font-weight: 300;
+
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-arrow {
+  transform: translateX(5px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .services-section {
+    width: 100%;
+    max-width: none;
+    padding: 0 40px;
+    margin: 70px 0 90px;
+  }
+
+  .service-item {
+    grid-template-columns: 50px 1fr 200px 35px;
+
+    gap: 20px;
+  }
+
+  .service-image {
+    width: 200px;
+    height: 125px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .services-section {
+    padding: 0 20px;
+
+    margin: 70px 0 90px;
+  }
+
+  .services-header {
+    margin-bottom: 50px;
+  }
+
+  .services-header h2 {
+    font-size: 40px;
+  }
+
+  .service-item {
+    grid-template-columns: 40px 1fr 25px;
+
+    gap: 15px;
+
+    padding: 25px 0;
+  }
+
+  .service-number {
+    grid-row: 1 / 3;
+  }
+
+  .service-info {
+    grid-column: 2;
+  }
+
+  .service-info h3 {
+    font-size: 22px;
+  }
+
+  .service-info p {
+    font-size: 12px;
+  }
+
+  .service-details {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+
+  .service-image {
+    grid-column: 2;
+
+    width: 100%;
+    height: 190px;
+
+    margin-top: 10px;
+  }
+
+  .service-arrow {
+    grid-column: 3;
+    grid-row: 1;
+
+    align-self: start;
+  }
+}
+
+/* =========================
+   ZESPÓŁ
+========================= */
+
+/* =========================
+   ZESPÓŁ
+========================= */
+
+.team-section {
+  width: 100%;
+  padding: 90px 0 120px;
+}
+
+.team-section > h2 {
+  margin: 0 0 110px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* kontener wszystkich osób */
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+
+  gap: 90px;
+}
+
+/* pojedyncza osoba */
+
+.team-member {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 95px;
+
+  min-height: 300px;
+}
+
+/* zdjęcie */
+
+.team-image {
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+}
+
+.team-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* tekst */
+
+.team-info {
+  max-width: 360px;
+}
+
+.team-info span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #c6a895;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+
+  letter-spacing: 3px;
+}
+
+.team-info h3 {
+  margin: 0 0 25px;
+
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+
+  letter-spacing: 5px;
+}
+
+.team-info p {
+  margin: 0;
+
+  color: #777;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+
+  line-height: 1.65;
+}
+
+/* =========================
+   ODWRÓCONY BLOK
+========================= */
+
+.team-member-reverse {
+  grid-template-areas: "text image";
+}
+
+.team-member-reverse .team-image {
+  grid-area: image;
+}
+
+.team-member-reverse .team-info {
+  grid-area: text;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 70px 20px 80px;
+  }
+
+  .team-section > h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .team-members {
+    gap: 70px;
+  }
+
+  .team-member,
+  .team-member-reverse {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    align-items: stretch;
+  }
+
+  .team-image {
+    height: 320px;
+  }
+
+  .team-info {
+    max-width: none;
+  }
+
+  .team-info h3 {
+    font-size: 22px;
+  }
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 420px minmax(600px, 800px);
+  justify-content: center;
+  gap: 120px;
+  padding: 120px 60px;
+  border-top: 1px solid #eee8e3;
+}
+
+/* LEWA STRONA */
+
+.faq-intro {
+  padding-top: 10px;
+}
+
+.faq-label {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #b8957d;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.faq-intro h2 {
+  margin: 0 0 30px;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.faq-intro > p {
+  max-width: 340px;
+  margin: 0;
+  color: #777;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.faq-contact {
+  margin-top: 55px;
+}
+
+.faq-contact span {
+  display: block;
+  margin-bottom: 18px;
+  color: #b8957d;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.faq-contact a {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 1px solid #b8957d;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #b8957d;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.faq-contact a:hover {
+  background-color: #a5826b;
+}
+
+/* PRAWA STRONA */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f8f5f2;
+}
+
+.faq-item summary {
+  display: grid;
+  grid-template-columns: 45px 1fr 30px;
+  align-items: center;
+  gap: 20px;
+  min-height: 80px;
+  padding: 0 30px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary > span {
+  color: #b8957d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+}
+
+.faq-item summary strong {
+  color: #292929;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.faq-item summary b {
+  color: #8e7565;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.faq-answer {
+  padding: 0 80px 30px 95px;
+}
+
+.faq-answer p {
+  margin: 15px;
+  color: #777;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* OTWARTE PYTANIE */
+
+.faq-item[open] {
+  background-color: #f5f0eb;
+}
+
+.faq-item[open] summary {
+  border-bottom: 1px solid #ded3ca;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 20px;
+  }
+
+  .faq-intro h2 {
+    font-size: 34px;
+  }
+
+  .faq-intro > p {
+    max-width: 100%;
+  }
+
+  .faq-contact {
+    margin-top: 35px;
+  }
+
+  .faq-item summary {
+    grid-template-columns: 35px 1fr 20px;
+    padding: 0 18px;
+    gap: 10px;
+  }
+
+  .faq-item summary strong {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px 63px;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 80px;
+  padding: 70px 8% 25px;
+
+  background-color: #f4eee8;
+  color: #292522;
+}
+
+/* GŁÓWNA CZĘŚĆ */
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 0.8fr;
+  gap: 70px;
+
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* LOGO */
+
+.footer-brand h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.footer-brand > span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 5px;
+}
+
+.footer-brand p {
+  margin-top: 35px;
+
+  color: #9a806f;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* KOLUMNY */
+
+.footer-column h3 {
+  margin: 5px 0 25px;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.footer-column p {
+  margin: 0 0 18px;
+
+  color: #77706b;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* LINKI */
+
+.footer-column > a {
+  display: block;
+
+  width: fit-content;
+  margin-bottom: 10px;
+
+  color: #77706b;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.footer-column > a:hover {
+  color: #a88670;
+}
+
+/* SOCIAL MEDIA */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.social-links a {
+  width: fit-content;
+
+  color: #77706b;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #a88670;
+}
+
+/* DOLNA LINIA */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1300px;
+
+  margin: 60px auto 0;
+  padding-top: 25px;
+
+  border-top: 1px solid #ddd2ca;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #91877f;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+
+/* LINKI PRAWNE */
+
+.footer-legal {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-legal a {
+  color: #91877f;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #a88670;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 60px 40px 25px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 55px 25px 25px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-brand h2 {
+    font-size: 36px;
+  }
+
+  .footer-brand p {
+    margin-top: 25px;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    margin-top: 45px;
+  }
+
+  .footer-legal {
+    gap: 20px;
+  }
+}
